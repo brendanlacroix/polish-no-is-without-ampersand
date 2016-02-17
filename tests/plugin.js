@@ -9,7 +9,7 @@ define(function (require) {
     name: 'polish-no-is-without-ampersand',
 
     message: function () {
-      assert.strictEqual(plugin.message, 'State modifying classes (ones that begin with .is-) should always be preceded by an ampersand.');
+      assert.strictEqual(plugin.message, 'State-modifying classes (ones that begin with .is-) should always be preceded by an ampersand.');
     }
   });
 

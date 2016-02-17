@@ -1,0 +1,25 @@
+#is-this-rule-will-fail {
+  color: red;
+}
+
+.the-child-of-this-fails {
+  .is-because-of-a-missing-ampersand {
+    color: red;
+  }
+}
+
+.as-does .is-this-one {
+  color: red;
+}
+
+.this-rule-wont-fail {
+  &.is-because-of-the-ampersand {
+    color: green;
+  }
+}
+
+// test that selectors ending with "is-" that are
+// fine don't flag an error
+.this-shouldnt-fail {
+  color: green;
+}
